@@ -1,0 +1,32 @@
+{
+  "name": "main",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf .turbo .next",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "browserslist": "defaults, not ie <= 11",
+  "dependencies": {
+    "focus-visible": "^5.2.0",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ui": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
+    "eslint": "^8.36.0",
+    "eslint-config-custom": "*",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "rimraf": "^4.4.0",
+    "tsconfig": "*",
+    "typescript": "^4.9.5"
+  }
+}

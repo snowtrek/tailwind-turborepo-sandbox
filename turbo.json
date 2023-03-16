@@ -1,0 +1,27 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["**/.env", "**/.env.*local"],
+  "globalEnv": [
+    "GITHUB_CLIENT_ID",
+    "GITHUB_CLIENT_SECRET",
+    "NEXTAUTH_SECRET",
+    "NODE_ENV"
+  ],
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {},
+    "lint:fix": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}
